@@ -1,0 +1,1350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body id="top">
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">Peluditos</a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Inicio</a>
+            </li>
+  
+            <li class="navbar-item"> 
+              <a href="#productos-mas-vendidos" class="navbar-link" data-nav-link>Productos</a> 
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#categorias" class="navbar-link" data-nav-link>Cotegorias</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="contacto.html" class="navbar-link" data-nav-link>Contacto</a>
+            </li>
+          </ul>
+        </nav>
+       
+        <div class="header-actions">
+            <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="action-btn  mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <i class="bi bi-cart4"></i> <span>  </span>
+                  <span id="contador" class="position-absolute top-0  badge rounded-pill bg-danger">
+                    0   
+                  </span>            
+                </button>
+                <button class="btn btn-warning" type="submit">
+                  Limpiar
+                </button>             
+              </form>             
+          <button class="action-btn user" aria-label="User">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </button>
+          <button class="action-btn" aria-label="cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section class="section hero has-bg-image" id="Inicio" aria-label="Inicio"
+          style="background-image: url('./assets/images/hero-banner.jpg')">
+          <div class="container">
+            <h1 class="h1 hero-title">
+              <span class="span">Veterinaria</span> de alta calida
+            </h1>
+            <p class="hero-text">Ofertas</p>
+          </div>
+        </section>
+  
+        <section class="section category" aria-label="category">
+          <div class="container">
+  
+            <h2 id="categorias" class="h2 section-title">
+              <span  class="span">Categorias</span>
+            </h2>
+  
+            <ul class="has-scrollbar">
+  
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-1.jpg" width="330" height="300" loading="lazy" alt="Cat Food"
+                      class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#alimentGat" class="card-title">Comida para gatos</a>
+                  </h3>
+                </div>
+              </li>
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-2.jpg" width="330" height="300" loading="lazy" alt="Cat Toys"
+                      class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Juguetes para gatos</a>
+                  </h3>
+  
+                </div>
+              </li>
+  
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-3.jpg" width="330" height="300" loading="lazy" alt="Dog Food"
+                      class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Comida para perros</a>
+                  </h3>
+  
+                </div>
+              </li>
+  
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-4.jpg" width="330" height="300" loading="lazy" alt="Dog Toys"
+                      class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Juguetes pafra perros</a>
+                  </h3>
+                </div>
+              </li>
+  
+              <li class="scrollbar-item">
+                <div class="category-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 330; --height: 300;">
+                    <img src="./assets/images/category-5.jpg" width="330" height="300" loading="lazy"
+                      alt="Dog Sumpplements" class="img-cover">
+                  </figure>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Sumidores para perros</a>
+                  </h3>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+        <section class="section offer" aria-label="offer">
+          <div class="container">
+  
+            <ul class="grid-list">
+  
+              <li>
+                <div class="offer-card has-bg-image img-holder"
+                  style="background-image: url('./assets/images/banner.gif'); --width: 540; --height: 374;">
+                </div>
+              </li>
+              <li>
+                <div class="offer-card has-bg-image img-holder"
+                  style="background-image: url('./assets/images/banner-2.gif'); --width: 540; --height: 374;">
+                </div>
+              </li>
+              <li>
+                <div class="offer-card has-bg-image img-holder"
+                  style="background-image: url('./assets/images/banner-3.gif'); --width: 540; --height: 374;">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="section product" id="shop" aria-label="product">
+          <div class="container-fluid mt-2">
+            <h2 id="productos-mas-vendidos" class="h2 section-title"> <span class="span">Productos más</span> vendidos </h2>
+            <ul class="grid-list">
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-1.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover default">
+                    <img src="./assets/images/product-1_0.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover hover">
+                    <button id="btnprod1" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>            
+                    </button>
+                  </div>
+                  <div class="card-conten">
+                    <h3 class="card-title h3"><span id="nombre">Comida para perro</span>            
+                    </h3>
+                    <p><span class="card-price" id="precio">60</span></p>                
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-2.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover default">
+                    <img src="./assets/images/product-2_0.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover hover">
+                    <button  id="btnag1" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-content" >
+                    <h3 class="card-title h3" id="nombre1"> Pez</h3>
+                    <p><span class="card-price" id="precio1">55</span></p></data>
+                  </div>
+                </div>
+              </li>
+  
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-3.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover default">
+                    <img src="./assets/images/product-3_0.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover hover">
+                    <button id="btnag2" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a id="nombre2" class="card-title">Comida de perro</a>
+                    </h3>
+                    <p><span class="card-price" id="precio2">70</span></p>
+                  </div>
+                </div>
+              </li> 
+              <li>
+                <div class="product-card"> 
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-4.jpg" width="360" height="360" loading="lazy"
+                      alt="Comida de perro" class="img-cover default">
+                    <img src="./assets/images/product-4_0.jpg" width="360" height="360" loading="lazy"
+                      alt="Comida de perro" class="img-cover hover"> 
+                    <button id="btnag3" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a id="nombre3" class="card-title">Comida</a>
+                    </h3>
+                    <p><span class="card-price" id="precio3">80</span></p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card">  
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-5.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover default">
+                    <img src="./assets/images/product-5_0.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover hover">
+  
+                    <button id="btnag4" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a id="nombre4" class="card-title">perro</a>
+                    </h3>
+                    <p><span class="card-price" id="precio4">90</span></p>
+                  </div>
+                </div>
+              </li> 
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-6.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover default">
+                    <img src="./assets/images/product-6_0.jpg" width="360" height="360" loading="lazy"
+                      alt="..." class="img-cover hover">
+  
+                    <button id="btnag5" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a id="nombre5" class="card-title">kk</a>
+                    </h3>
+                    <p><span class="card-price" id="precio5">100</span></p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-7.jpg" width="360" height="360" loading="lazy"
+                      alt="Comida de perro" class="img-cover default">
+                    <img src="./assets/images/product-7_0.jpg" width="360" height="360" loading="lazy"
+                      alt="Comida de perro" class="img-cover hover">
+                    <button id="btnag6" class="card-action-btn" aria-label="add to card" title="Add To Card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a id="nombre6" class="card-title">Co perro</a>
+                    </h3>
+                    <p><span class="card-price" id="precio6">600</span></p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="product-card">
+                  <div class="card-banner img-holder" style="--width: 360; --height: 360;">
+                    <img src="./assets/images/product-8.jpg" width="360" height="360" loading="lazy"
+                      alt="Comida de perro" class="img-cover default">
+                    <img src="./assets/images/product-8_0.jpg" width="360" height="360" loading="lazy"
+                      alt="Comida de perro" class="img-cover hover">
+                    <button id="btnag7" class="card-action-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                      </svg>
+                    </button>
+                  </div>
+                    <h3 class="h3">
+                      <a id="nombre7" class="card-title">Comida de perro</a>
+                    </h3>
+                    <p><span class="card-price" id="precio7">800</span></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+      <section class="section service" aria-label="service">
+        <div class="container">
+          <img src="./assets/images/service-image.png" width="122" height="136" loading="lazy" alt="" class="img">
+          <h2 class="h2 section-title">
+            <span class="span">Lo que tu mascota necesita,</span> servicios.
+          </h2>
+          <ul class="grid-list">
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-1.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Entrega gratuita</h3>
+
+                <p class="card-text">
+                  Haga su pedido antes de las 2:00pm para obtener tu entraga gratuita
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-2.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Regreso de 30 dias</h3>
+
+                <p class="card-text">
+                  35% descuento en tu primer pedido mas 5% de descuentos en futuro.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-3.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">Pago seguro</h3>
+
+                <p class="card-text">
+                  25% de descuento en pedidios de linea bs50+. Disponibles en mayoeria de las susursales.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-icon-4.png" width="70" height="70" loading="lazy"
+                    alt="service icon">
+                </figure>
+
+                <h3 class="h3 card-title">24/7 Suporte</h3>
+
+                <p class="card-text">
+                  Comprar en linea para recibir pedidos Bs35 envios rapidos.
+                </p>
+              </div>
+            </li>
+          </ul> 
+        </div>
+      </section>
+      <section class="section brand" aria-label="brand">
+        <div class="container">       
+          <h2 class="h2 section-title">
+            <span class="span">Mejores</span> Marcas
+          </h2>       
+          <ul class="has-scrollbar">      
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/wiskhas.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>     
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/log.webp" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/com.avif" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/brand-4.jpg" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="./assets/images/42.webp" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="container mt-5">
+        <h2 id="alimentGat" class="h2 section-title">
+            <span class="span">Alimento </span> Gatos
+          </h2> 
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5> <span id="nombre8">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio8" class="text-success">50</h6>
+                    <a href="#" id="btnag8" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL2.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre9">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio9" class="text-success">78</h6>
+                    <a href="#" id="btnag9" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL3.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre10">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio10" class="text-success">75</h6>
+                    <a href="#" id="btnag10" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL4.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre11">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio11" class="text-success">70</h6>
+                      <a href="#" id="btnag11" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL5.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre12">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio12" class="text-success">55</h6>
+                      <a href="#" id="btnag12" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL6.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre13">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio13" class="text-success">60</h6>
+                      <a href="#" id="btnag13" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL7.png" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                    <h5> <span id="nombre14">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio14" class="text-success">60</h6>
+                    <a href="#" id="btnag14" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL8.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre15">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio15" class="text-success">60</h6>
+                    <a href="#" id="btnag15" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL9.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre16">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio16" class="text-success">60</h6>
+                      <a href="#" id="btnag16" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL10.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre17">comi</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio17" class="text-success">60</h6>
+                      <a href="#" id="btnag17" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL11.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre18">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio18" class="text-success">60</h6>
+                      <a href="#" id="btnag18" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL12.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre19">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio19" class="text-success">60</h6>
+                      <a href="#" id="btnag19" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5"> 
+        <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL13.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5> <span id="nombre20">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio20" class="text-success">50</h6>
+                    <a href="#" id="btnag20" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL12.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre21">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio21" class="text-success">78</h6>
+                    <a href="#" id="btnag21" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL15.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre22">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio22" class="text-success">75</h6>
+                    <a href="#" id="btnag22" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL16.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre23">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio23" class="text-success">70</h6>
+                      <a href="#" id="btnag23" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL17.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre24">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio24" class="text-success">55</h6>
+                      <a href="#" id="btnag24" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL18.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre25">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio25" class="text-success">60</h6>
+                      <a href="#" id="btnag25" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL19.png" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                    <h5> <span id="nombre26">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio26" class="text-success">60</h6>
+                    <a href="#" id="btnag26" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenGto/AL20.jpg" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre27">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio27" class="text-success">60</h6>
+                    <a href="#" id="btnag27" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL21.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre27">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio27" class="text-success">60</h6>
+                      <a href="#" id="btnag27" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL22.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre28">comi</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio28" class="text-success">60</h6>
+                      <a href="#" id="btnag28" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL23.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre29">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio29" class="text-success">60</h6>
+                      <a href="#" id="btnag29" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenGto/AL24.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre30">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio30" class="text-success">60</h6>
+                      <a href="#" id="btnag30" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <h2 id="alimentGat" class="h2 section-title">
+          <span class="span">Juguetes </span> Gatos
+        </h2>  
+        <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./JgteGat/JGTE1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5> <span id="nombre31">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio31" class="text-success">50</h6>
+                    <a href="#" id="btnag31" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./JgteGat/JGTE2.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre32">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio32" class="text-success">78</h6>
+                    <a href="#" id="btnag32" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./JgteGat/JGTE3.png" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre33">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio33" class="text-success">75</h6>
+                    <a href="#" id="btnag33" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE4.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre34">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio34" class="text-success">70</h6>
+                      <a href="#" id="btnag34" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE5.jpg" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre35">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio35" class="text-success">55</h6>
+                      <a href="#" id="btnag35" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE6.avif" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre36">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio36" class="text-success">60</h6>
+                      <a href="#" id="btnag36" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./JgteGat/JGTE7.png" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                    <h5> <span id="nombre37">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio37" class="text-success">60</h6>
+                    <a href="#" id="btnag37" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./JgteGat/JGTE8.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre38">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio38" class="text-success">60</h6>
+                    <a href="#" id="btnag38" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE9.jpeg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre39">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio39" class="text-success">60</h6>
+                      <a href="#" id="btnag39" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE10.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre40">comi</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio40" class="text-success">60</h6>
+                      <a href="#" id="btnag40" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE11.png" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre41">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio41" class="text-success">60</h6>
+                      <a href="#" id="btnag41" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./JgteGat/JGTE4.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre42">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio42" class="text-success">60</h6>
+                      <a href="#" id="btnag42" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <h2 id="alimentGat" class="h2 section-title">
+          <span class="span">Comida </span> para Perros
+        </h2>  
+        <div id="productCarousel3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP1.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5> <span id="nombre43">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio43" class="text-success">50</h6>
+                    <a href="#" id="btnag43" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP2.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre44">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio44" class="text-success">78</h6>
+                    <a href="#" id="btnag44" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP3.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre45">comida</span>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <h6 id="precio45" class="text-success">75</h6>
+                    <a href="#" id="btnag45" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenPrro/ALP4.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre46">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio46" class="text-success">70</h6>
+                      <a href="#" id="btnag46" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenPrro/ALP5.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre47">comida</span>
+                      <p class="card-text">Descripción breve del producto 1.</p>
+                      <h6 id="precio47" class="text-success">55</h6>
+                      <a href="#" id="btnag47" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenPrro/ALP6.webp" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                      <h5> <span id="nombre48">comida</span>
+                      <p class="card-text">20gr.</p>
+                      <h6 id="precio48" class="text-success">75</h6>
+                      <a href="#" id="btnag48" class="btn btn-warning">Agregar</a>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center gap-3">
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP7.webp" class="card-img-top" alt="Producto 3">
+                  <div class="card-body">
+                    <h5> <span id="nombre49">docto esa</span>
+                    <p class="card-text">20gr.</p>
+                    <h6 id="precio49" class="text-success">210</h6>
+                    <a href="#" id="btnag49" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP8.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre50">POeda</span>
+                    <p class="card-text">20gr.</p>
+                    <h6 id="precio50" class="text-success">160</h6>
+                    <a href="#" id="btnag50" class="btn btn-warning">Agregar</a>
+                  </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenPrro/ALP9.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre51">Wellnes CORE</span>
+                      <p class="card-text">20gr.</p>
+                      <h6 id="precio51" class="text-success">170</h6>
+                      <a href="#" id="btnag51" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./AlimenPrro/ALP10.webp" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre52">comi</span>
+                      <p class="card-text">20gr.</p>
+                      <h6 id="precio52" class="text-success">260</h6>
+                      <a href="#" id="btnag52" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./assets/images/product-7.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre53">cesar home</span>
+                      <p class="card-text">20gr.</p>
+                      <h6 id="precio53" class="text-success">160</h6>
+                      <a href="#" id="btnag53" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img src="./assets/images/product-8.jpg" class="card-img-top" alt="Producto 4">
+                    <div class="card-body">
+                      <h5> <span id="nombre54">Victor hi-Pro</span>
+                      <p class="card-text">20gr.</p>
+                      <h6 id="precio54" class="text-success">109</h6>
+                      <a href="#" id="btnag54" class="btn btn-warning">Agregar</a>
+                    </div>                 
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#productCarousel3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+      <div id="productCarousel4" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center gap-3">
+              <div class="card shadow-sm" style="width: 18rem;">
+                <img src="./AlimenPrro/ALP11.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5> <span id="nombre55">lamo nature</span>
+                  <p class="card-text">20gr.</p>
+                  <h6 id="precio55" class="text-success">50</h6>
+                  <a href="#" id="btnag55" class="btn btn-warning">Agregar</a>
+                </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                <img src="./AlimenPrro/ALP12.webp" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                  <h5> <span id="nombre56">Canidae Pure</span>
+                  <p class="card-text">20gr.</p>
+                  <h6 id="precio56" class="text-success">78</h6>
+                  <a href="#" id="btnag56" class="btn btn-warning">Agregar</a>
+                </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                <img src="./AlimenPrro/ALP13.webp" class="card-img-top" alt="Producto 2">
+                <div class="card-body">
+                  <h5> <span id="nombre57">Pedigree Dentastrix</span>
+                  <p class="card-text">20gr.</p>
+                  <h6 id="precio57" class="text-success">85</h6>
+                  <a href="#" id="btnag57" class="btn btn-warning">Agregar</a>
+                </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP14.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre58">Natural Balance</span>
+                    <p class="card-text">20gr.</p>
+                    <h6 id="precio58" class="text-success">70</h6>
+                    <a href="#" id="btnag58" class="btn btn-warning">Agregar</a>
+                  </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP15.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre59">Beneful Original</span>
+                    <p class="card-text">20gr.</p>
+                    <h6 id="precio59" class="text-success">95</h6>
+                    <a href="#" id="btnag59" class="btn btn-warning">Agregar</a>
+                  </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP16.webp" class="card-img-top" alt="Producto 2">
+                  <div class="card-body">
+                    <h5> <span id="nombre60">Royal Canin</span>
+                    <p class="card-text">20gr.</p>
+                    <h6 id="precio60" class="text-success">77</h6>
+                    <a href="#" id="btnag60" class="btn btn-warning">Agregar</a>
+                  </div>
+              </div>             
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center gap-3">
+              <div class="card shadow-sm" style="width: 18rem;">
+                <img src="./AlimenPrro/ALP17.webp" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                  <h5> <span id="nombre61">Purina Dog chow</span>
+                  <p class="card-text">20gr.</p>
+                  <h6 id="precio61" class="text-success">55</h6>
+                  <a href="#" id="btnag61" class="btn btn-warning">Agregar</a>
+                </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                <img src="./AlimenPrro/ALP18.webp" class="card-img-top" alt="Producto 4">
+                <div class="card-body">
+                  <h5> <span id="nombre62">Pedigree Adulto</span>
+                  <p class="card-text">20gr. Alimento seco con proteinas</p>
+                  <h6 id="precio62" class="text-success">110</h6>
+                  <a href="#" id="btnag62" class="btn btn-warning">Agregar</a>
+                </div>
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP19.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre63">Asada</span>
+                    <p class="card-text">20gr. Carne Asada</p>
+                    <h6 id="precio63" class="text-success">100</h6>
+                    <a href="#" id="btnag63" class="btn btn-warning">Agregar</a>
+                  </div>                 
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP20.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre64">Peregri</span>
+                    <p class="card-text">20gr. Crane</p>
+                    <h6 id="precio64" class="text-success">60</h6>
+                    <a href="#" id="btnag64" class="btn btn-warning">Agregar</a>
+                  </div>                 
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP21.webp" class="card-img-top" alt="Producto 4">
+                  <div class="card-body">
+                    <h5> <span id="nombre65">Proplan</span>
+                    <p class="card-text">20gr. pollo</p>
+                    <h6 id="precio65" class="text-success">80</h6>
+                    <a href="#" id="btnag65" class="btn btn-warning">Agregar</a>
+                  </div>                 
+              </div>
+              <div class="card shadow-sm" style="width: 18rem;">
+                  <img src="./AlimenPrro/ALP22.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5> <span id="nombre66">Purina</span>
+                    <p class="card-text">20gr. Carne</p>
+                    <h6 id="precio66" class="text-success">85</h6>
+                    <a href="#" id="btnag66" class="btn btn-warning">Agregar</a>
+                  </div>                 
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"> <div class="offcanvas-header bg-warning text-dark"> <h5 class="offcanvas-title" id="offcanvasRightLabel">Lista de Productos</h5> <button type="button" class="btn-close text-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button> </div> <div class="offcanvas-body bg-light p-4"> <div class="table-responsive"> <table id="tabla" class="table table-striped table-bordered table-hover shadow-sm"> <thead class="thead-light"> <tr> <th>#</th> <th>Nombre</th> <th>Precio</th> <th>Cantidad</th> <th>Total</th> </tr> </thead> <tbody></tbody> <tfoot> <tr> <td colspan="4" class="text-end"><strong>Total:</strong></td> <td><span id="total">0.00</span></td> </tr> </tfoot> </table> </div> <div class="d-flex justify-content-between mt-4"> <button type="button" id="btndel" class="btn btn-danger w-48 shadow-lg">Eliminar</button> <button type="button" id="btncomprar" class="btn btn-success w-48 shadow-lg">Comprar</button> </div> </div>
+    
+     
+    </main>
+
+    <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+        <div class="footer-top section">
+          <div class="container">
+            <div class="footer-brand">  
+              <a href="#" class="logo">Peluditos</a>
+              <p class="footer-text">
+                Si tiene una consulta contactenos <a href="mailto:support@gmail.com"
+                  class="link">support@gmail.com</a>
+              </p>
+              <ul class="contact-list">
+    
+                <li class="contact-item">
+                  <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                  <address class="address">
+                    Veterinario
+                  </address>
+                </li>
+    
+                <li class="contact-item">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+    
+                  <a href="tel:63127757" class="contact-link">63127757</a>
+                </li>
+    
+              </ul>
+    
+              <ul class="social-list">
+    
+                <li>
+                    <a href="#" class="social-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5 9.341-9.334 0-.14-.004-.282-.01-.42A6.68 6.68 0 0 0 16 3.542a6.656 6.656 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.084.797A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.788-3.434 3.28 3.28 0 0 0 1.018 4.384A3.269 3.269 0 0 1 .64 6.575v.041A3.283 3.283 0 0 0 3.278 9.61a3.203 3.203 0 0 1-.865.115c-.212 0-.418-.02-.617-.057a3.283 3.283 0 0 0 3.066 2.279A6.588 6.588 0 0 1 0 13.026a9.29 9.29 0 0 0 5.026 1.474"/>
+                      </svg>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 6.996 4.628c-.126-.212-.264-.417-.414-.612A7.486 7.486 0 0 0 8 3.5a7.5 7.5 0 0 0 0 15c1.02 0 1.99-.198 2.88-.558-.162-.414-.31-.837-.452-1.27a5.793 5.793 0 0 1-2.428.543c-3.313 0-6-2.687-6-6s2.687-6 6-6a6 6 0 0 1 5.79 4.505c.09.29.166.586.226.887A8 8 0 0 0 8 0z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#" class="social-link">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.739 0 5.462.01 4.606.048 3.75.088 3.178.225 2.65.465a2.64 2.64 0 0 0-.97.645 2.64 2.64 0 0 0-.646.97c-.24.528-.377 1.1-.417 1.956C.01 5.46 0 5.739 0 8s.01 2.539.048 3.394c.04.856.177 1.428.417 1.956.168.366.382.695.645.97.29.29.619.504.97.645.528.24 1.1.377 1.956.417C5.46 15.99 5.739 16 8 16s2.539-.01 3.394-.048c.856-.04 1.428-.177 1.956-.417.366-.168.695-.382.97-.645a2.64 2.64 0 0 0 .645-.97c.24-.528.377-1.1.417-1.956C15.99 10.54 16 10.261 16 8s-.01-2.539-.048-3.394c-.04-.856-.177-1.428-.417-1.956a2.64 2.64 0 0 0-.645-.97 2.64 2.64 0 0 0-.97-.645c-.528-.24-1.1-.377-1.956-.417C10.54.01 10.261 0 8 0zM8 1.442c1.286 0 1.426.005 1.926.028.528.024.8.1 1.053.18.311.1.534.218.776.46.25.25.361.474.46.776.08.254.156.526.18 1.053.023.501.028.641.028 1.926s-.005 1.426-.028 1.926c-.024.528-.1.8-.18 1.053a1.76 1.76 0 0 1-.46.776c-.25.25-.474.361-.776.46-.254.08-.526.156-1.053.18-.501.023-.641.028-1.926.028s-1.426-.005-1.926-.028c-.528-.024-.8-.1-1.053-.18a1.76 1.76 0 0 1-.776-.46c-.25-.25-.361-.474-.46-.776-.08-.254-.156-.526-.18-1.053C1.447 9.426 1.442 9.286 1.442 8s.005-1.426.028-1.926c.024-.528.1-.8.18-1.053.1-.311.218-.534.46-.776.25-.25.474-.361.776-.46.254-.08.526-.156 1.053-.18.501-.023.641-.028 1.926-.028zM8 4.222a3.778 3.778 0 1 0 0 7.556A3.778 3.778 0 0 0 8 4.222zm0 1.333a2.444 2.444 0 1 1 0 4.889 2.444 2.444 0 0 1 0-4.889zM12.026 4.49a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  
+    
+              </ul>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Corporativo</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Carreras</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Acerca de</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contactenos</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Preguntas</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Vender</a>
+              </li>  
+              <li>
+                <a href="#" class="footer-link">Programa</a>
+              </li>
+            </ul>  
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Informacion</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Tienda Online</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Politica de privacidad</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Politica de rembolso</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Politica de envio</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terminos y servicios</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Seguimineto del pedido</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Servicios</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Aseo</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Entrenamientos a mascotas</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Servicio veterinario</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Seguros</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Adopcion de mascotas</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Centro de recursos</a>
+              </li>
+            </ul>  
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; Mascotas <a href="#" class="copyright-link">Bolivia</a>
+            </p>
+    
+            <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+    
+          </div>
+        </div>
+    
+      </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+        
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="carrito.js"></script>
+    <script 
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
